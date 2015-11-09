@@ -28,6 +28,7 @@ a{
     box-shadow: 0 4px 5px rgba(0,0,0,0.3);
     position: relative;
     border: 1px solid darkgray;
+    /*margin-bottom:300px;*/
 }
 
 /*logo*/
@@ -39,6 +40,7 @@ a{
 .header #menu ul{
     float:right;
     list-style-type: none;
+    -webkit-padding-start: 0px;
 }
 
 .header #menu li{
@@ -79,84 +81,194 @@ a{
 .header #menu .active a:hover{
     font-weight: bold
 }
-.cover{
+.cover {
     background: white;
     background-size: cover;
-    height: 100vh;
+    height: 40em;
 }
 
-.main_content{
-    float:left;
-    color:black;
+.main_content {
+    float: left;
+    color: black;
     position: absolute;
     margin-left: 10%;
-    width:85%;
-    margin-top:5%;
+    width: 85%;
+    margin-top: 5%;
 }
 
-.main_content .placeholder img{
-    float:right;
+.main_content .placeholder img {
+    float: right;
     margin-top: 6%;
 }
 
-.main_content #apple:hover, #google:hover{
-    opacity: 0.6;
+.main_content #apple:hover, #google:hover {
+    opacity: 0.8;
 }
 
-.main_content h2{
-    color:white;
-    width:30%;
-}
-.main_content p{
-    width:28%;
+.main_content h2 {
+    color: white;
+    width: 30%;
 }
 
-.content{
-    float:left;
+.main_content p {
+    width: 28%;
 }
-
 .more_content {
     background-color: #E5BF77;
     padding: 1% 25%;
     text-align: center;
-
 }
 
 .footer_wrapper {
     width: 100%;
     float: left;
     background-color: #444B5D;
-    height: 108px;
+    height: 110px;
 }
 
-.footer_wrapper ul{
+.footer_wrapper ul {
     list-style-type: none;
 }
 
-.footer_wrapper li{
+.footer_wrapper li {
     display: inline-block;
     margin: 2% 2%;
 }
 
-#footer_text a:visited, #footer_text a:link{
-    color:white;
+#footer_text a:visited, #footer_text a:link {
+    color: white;
 }
 
-#footer_text a:hover{
+#footer_text a:hover {
     color: #F75A60;
     font-weight: bolder;
 }
 
- #footer_text a:focus{
-    color:#F75A60;
+#footer_text a:focus {
+    color: #F75A60;
     font-weight: bolder;
 }
 
-.footer_wrapper #footer_text{
+.footer_wrapper #footer_text {
     text-align: center;
     color: white;
 }
 
-@media only screen and (min-width: 150px) and (max-width: 520px) {
+@media only screen and (min-width: 150px) and (max-width: 1150px) {
+    .cover {
+        height:50em;
+    }
+    .main_content {
+        float: left;
+        position: relative;
+        margin-left: 11%;
+        margin-right: 10%;
+        width: 85%;
+        margin-top: 5%;
+    }
 
+
+    .main_content .placeholder img {
+        float: left;
+        margin-left:11%;
+        width:80%;
+        height:60%;
+    }
+
+    .main_content #apple, #google{
+        width:15em;
+        height:5em;
+        float:left;
+        margin-left:11%;
+    }
+    .main_content h2 {
+        text-align:center;
+        color: black;
+        width: 80%;
+    }
+
+    .main_content p {
+        width: 75%;
+        margin-left:11%;
+    }
+´}
+
+
+@media only screen and (min-width: 150px) and (max-width: 950px) {
+    .cover {
+        height:43em;
+    }
+
+    .header img{
+        float:none;
+        /*padding:2 0;*/
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .header {
+        background-color: #E5E5E5;
+        height: 385px;
+    }
+
+    .header #menu ul{
+        width:100%;
+        float:left;
+        list-style-type: none;
+        -webkit-padding-start: 0px;
+    }
+
+    .header #menu li {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 0 0;
+        display: block;
+    }
+
+    .header #menu a:link, a:visited {
+        width: 95%;
+    }
+}
+
+    @media only screen and (min-width: 150px) and (max-width: 800px) {
+    .more_content {
+        background-color: #E5BF77;
+        text-align: center;
+    }
+
+    .footer_wrapper {
+        width: 100%;
+        float: left;
+        background-color: #444B5D;
+        height: 90px;
+    }
+
+    .footer_wrapper ul {
+        list-style-type: none;
+    }
+
+    .footer_wrapper li {
+        display: inline-block;
+        margin: 2% 2%;
+    }
+
+    #footer_text a:visited, #footer_text a:link {
+        color: white;
+    }
+
+    #footer_text a:hover {
+        color: #F75A60;
+        font-weight: bolder;
+    }
+
+    #footer_text a:focus {
+        color: #F75A60;
+        font-weight: bolder;
+    }
+
+    .footer_wrapper #footer_text {
+        text-align: center;
+        color: white;
+    }
 }
