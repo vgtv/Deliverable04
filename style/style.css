@@ -1,0 +1,162 @@
+
+@import url('http://fonts.googleapis.com/css?family=Lato:400,300,700,900');
+
+body {
+    margin: 0 auto;
+    background: #f4f4f4;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    color: #555;
+    line-height: 2em;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #444;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header {
+    background-color: #E5E5E5;
+    height: 60px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.3);
+    position: relative;
+    border: 1px solid darkgray;
+}
+
+/*logo*/
+.header img{
+    float:left;
+    padding:0.5% 0.5%;
+}
+
+.header #menu ul{
+    float:right;
+    list-style-type: none;
+}
+
+.header #menu li{
+    float:left;
+    margin: -17px 0 0 0;
+}
+
+.header #menu a:link, a:visited{
+    width:8em;
+    color: #3B485B;
+    background-color: #E5E5E5;
+    text-align: center;
+    display: inline-block;
+    padding: 14px 8px;
+    text-transform: uppercase;
+    border: 1px solid darkgray;
+}
+
+.header #menu a:hover{
+    border-bottom: 3px solid #E5BF77;
+    background-color: white;
+    font-weight: bolder;
+}
+
+.header #menu a:focus{
+    border-bottom: 3px solid #E5BF77;
+    background-color: #FFF;
+    font-weight: bolder;
+}
+
+.header #menu .active a{
+    border-bottom: 3px solid #E5BF77;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
+
+.header #menu .active a:hover{
+    font-weight: bold
+}
+.cover{
+    background: white;
+    background-size: cover;
+    height: 100vh;
+}
+
+.main_content{
+    float:left;
+    color:black;
+    position: absolute;
+    margin-left: 10%;
+    width:85%;
+    margin-top:5%;
+}
+
+.main_content .placeholder img{
+    float:right;
+    margin-top: 6%;
+}
+
+.main_content #apple:hover, #google:hover{
+    opacity: 0.6;
+}
+
+.main_content h2{
+    color:white;
+    width:30%;
+}
+.main_content p{
+    width:28%;
+}
+
+.content{
+    float:left;
+}
+
+.more_content {
+    background-color: #E5BF77;
+    padding: 1% 25%;
+    text-align: center;
+
+}
+
+.footer_wrapper {
+    width: 100%;
+    float: left;
+    background-color: #444B5D;
+    height: 108px;
+}
+
+.footer_wrapper ul{
+    list-style-type: none;
+}
+
+.footer_wrapper li{
+    display: inline-block;
+    margin: 2% 2%;
+}
+
+#footer_text a:visited, #footer_text a:link{
+    color:white;
+}
+
+#footer_text a:hover{
+    color: #F75A60;
+    font-weight: bolder;
+}
+
+ #footer_text a:focus{
+    color:#F75A60;
+    font-weight: bolder;
+}
+
+.footer_wrapper #footer_text{
+    text-align: center;
+    color: white;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 520px) {
+
+}
