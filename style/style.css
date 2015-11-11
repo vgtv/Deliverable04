@@ -60,25 +60,27 @@ a{
 }
 
 .header #menu a:hover{
-    border-bottom: 3px solid #E5BF77;
+    border-bottom: 8px solid #046400;
     background-color: white;
     font-weight: bolder;
 }
 
 .header #menu a:focus{
-    border-bottom: 3px solid #E5BF77;
+    border-bottom: 8px solid #046400;
     background-color: #FFF;
     font-weight: bolder;
 }
 
 .header #menu .active a{
-    border-bottom: 3px solid #E5BF77;
-    background-color: white;
-    color: black;
+    background-color: #008701;
+    color: white;
     font-weight: bolder;
 }
 
 .header #menu .active a:hover{
+    border-bottom: 8px solid #046400;
+    background-color: white;
+    color:black;
     font-weight: bold
 }
 .cover {
@@ -106,12 +108,17 @@ a{
 }
 
 .main_content h2 {
-    color: white;
+    color: #046400;
     width: 30%;
+    font-size:2.1em;
+    font-weight: bold;
 }
 
 .main_content p {
     width: 28%;
+    font-size:1.6em;
+    color: black;
+    font-weight: bolder;
 }
 .more_content {
     background-color: #E5BF77;
