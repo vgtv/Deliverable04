@@ -18,11 +18,24 @@
 
 </head>
 <body>
+
+<script>
+    function myFunction() {
+        if(document.querySelectorAll("header nav")[0].style.display == "block"){
+            document.querySelectorAll("header nav")[0].style.display = "none";
+        }else{
+            document.querySelectorAll("header nav")[0].style.display = "block" ;
+        }
+    }
+</script>
+
 <header class="header">
-    <a href="index.html">
+    <a href="index.html" tabindex="-1">
         <img id="logo" src="images/logo.png" alt="A logo of the brand Able" width="180" height="50" title="Logo" tabindex="0">
     </a>
-    <nav class="nav">
+    <img onclick="myFunction()" onkeypress="myFunction()" tabindex="0" id="mobileBtn"  style="height:50px; width:50px; display:none;" src="images/menu-512.png" />
+
+    <nav id="thisnav" class="nav">
         <ul>
             <li><a href="index.html" title="Home">Home</a></li>
             <li class="active"><a href="about.html" title="About">About Able</a></li>
@@ -35,27 +48,32 @@
 
 <section class="about" tabindex="0">
 </section>
-            <section class="todays_content"> 
+            <section class="first_color_content"> 
                 <h2>One Billion</h2>
-                <img src="images/rs.png" width="245" height="200">
+                <img src="images/animation/earth.png" width="235" height="180">
                 <p> Today around one in ten people in the world live with a disability.  They are the
                     largest minority in the world!
                     <a href="http://www.un.org/disabilities/default.asp?id=18" title="largest minority">REF</a>
                 </p>  
             </section>
 
-
-            <section class="accessibility_content">
-                <img src="images/rullestol1.png" width ="280" height="250">
+            <section class="second_color_content">
                 <h2>The main issue</h2>
+                <img src="images/animation/rullestol.png" width ="280" height="250">
                 <p>One of the main issues for people with a physical disability are accessibility. 
                     They can face innumerable physical obstacles and barriers every day.  Snow, stairs, curbs, a small
                     sidewalk, public transportation and lack of accessible information are a  few examples.  
-                    Acknowledging that there are many things in our society people without disabilities take for granted,
-                    we  have, in cooperation with Oslo Kommune, developed the
-                    mobile application Able.
                 </p>  
                </section>
+
+                <section class="first_color_content">
+                    <h2>The main issue</h2>
+                    <img src="images/animation/stafetten.png" width ="280" height="250">
+                    <p>Acknowledging that there are many things in our society people without disabilities take for granted,
+                        we  have, in cooperation with Oslo Kommune, developed the
+                        mobile application Able.
+                    </p>  
+                </section>
 
                 <section class="oslo_kommune_content">
                 <p> With Able, disabled people can take an active part in notifying Oslo

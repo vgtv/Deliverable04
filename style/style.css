@@ -52,6 +52,9 @@ a{
     border-bottom: 6px solid #444B5D;
     background-color: #FFF;
     font-weight: bolder;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
 }
 
 .header .nav a:focus{
@@ -60,17 +63,35 @@ a{
     font-weight: bolder;
 }
 
+.header .nav a:active{
+    width: 200px;
+    color:#222;
+    background: white;
+    -webkit-transition: width 2s ease, height 2s ease;
+    -moz-transition: width 2s ease, height 2s ease;
+    -o-transition: width 2s ease, height 2s ease;
+    transition: width 2s ease, height 2s ease;
+}
+
+
 .header .nav .active a{
     background-color: #444B5D;
     color: #FFF;
     font-weight: bolder;
+    -webkit-transition: width 2s ease, height 2s ease;
+    -moz-transition: width 2s ease, height 2s ease;
+    -o-transition: width 2s ease, height 2s ease;
+    transition: width 2s ease, height 2s ease;
 }
 
 .header .nav .active a:hover{
     border-bottom: 6px solid #444B5D;
     background-color: #FFF;
-    color:#000000;
     font-weight: bold;
+    color:black;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
 }
 
 .main_background_cover {
@@ -133,24 +154,24 @@ a{
     /*text-align: center;*/
 /*}*/
 
-.todays_content{
+.first_color_content{
     background-color: #FFF;
     height:300px;
 }
 
-.todays_content p{
+.first_color_content p{
     width:20%;
     margin-left:25%;
     float:left;
 }
 
-.todays_content h2{
+.first_color_content h2{
     width:20%;
     margin-left:25%;
     float:left;
 }
 
-.todays_content img{
+.first_color_content img{
     float:right;
     margin-right:400px;
     margin-top:35px;
@@ -158,26 +179,27 @@ a{
 
 /*****************************/
 
-.accessibility_content {
+.second_color_content {
     background-color: #82CCC8;
-    height:600px;
+    height:400px;
 }
 
-.accessibility_content p {
-    width:25%;
+.second_color_content p {
+    width:20%;
     margin-right:25%;
     float:right;
 }
 
-.accessibility_content h2{
-    width:25%;
+.second_color_content h2{
+    width:20%;
     margin-right:25%;
     float:right;
 }
 
-.accessibility_content img {
+.second_color_content img {
     float:left;
-    margin-left:250px;
+    margin-left:350px;
+    margin-top:90px;
 }
 
 /***************************/
@@ -202,7 +224,7 @@ a{
     width: 100%;
     float: left;
     background-color: #444B5D;
-    height: 110px;
+    height: auto;
 }
 
 .footer_wrapper ul {
