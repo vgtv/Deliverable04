@@ -75,7 +75,6 @@ a{
 
 .main_background_cover {
     background: #FFF;
-    background-size: cover;
     height: 38em;
 }
 
@@ -90,7 +89,7 @@ a{
 
 .main_content #mobile_tablet_mockup {
     float: right;
-    margin-top: 2%;
+    margin-top: 5%;
 }
 
 .main_content #mobile_tablet_mockup_2 {
@@ -98,11 +97,11 @@ a{
 }
 
 
-#apple_img, #google_img, #amazon_img {
+#apple_img, #google_img {
     opacity: 0.9;
 }
 
-#apple_img:hover, #google_img:hover, #amazon_img:hover{
+#apple_img:hover, #google_img:hover{
     opacity: 1;
 }
 
@@ -123,6 +122,81 @@ a{
     padding: 1% 25%;
     text-align: center;
 }
+
+
+/************ About ************/
+
+
+/*.about{*/
+    /*background-color: #E5BF77;*/
+    /*padding: 1% 25%;*/
+    /*text-align: center;*/
+/*}*/
+
+.todays_content{
+    background-color: #FFF;
+    height:300px;
+}
+
+.todays_content p{
+    width:20%;
+    margin-left:25%;
+    float:left;
+}
+
+.todays_content h2{
+    width:20%;
+    margin-left:25%;
+    float:left;
+}
+
+.todays_content img{
+    float:right;
+    margin-right:400px;
+    margin-top:35px;
+}
+
+/*****************************/
+
+.accessibility_content {
+    background-color: #82CCC8;
+    height:600px;
+}
+
+.accessibility_content p {
+    width:25%;
+    margin-right:25%;
+    float:right;
+}
+
+.accessibility_content h2{
+    width:25%;
+    margin-right:25%;
+    float:right;
+}
+
+.accessibility_content img {
+    float:left;
+    margin-left:250px;
+}
+
+/***************************/
+
+
+.oslo_kommune_content {
+    background-color: #E5BF77;
+    padding: 1% 25%;
+    text-align: center;
+}
+
+
+/*****************************/
+
+
+
+
+
+
 
 .footer_wrapper {
     width: 100%;
@@ -161,11 +235,17 @@ a{
 /****************************** ENABLED FOR MOST SCREENS WITH MEDIA QUERY *******************************************/
 
 
+/*@media only screen and (min-width: 1150px) and (max-width: 1150px) {*/
+/*header nav{*/
+/*display:block !important;*/
+/*}*/
 
-@media only screen and (min-width: 150px) and (max-width: 1150px) {
+
+@media only screen and (max-width: 1150px) {
     .main_background_cover {
-        height: 65em;
+        height:58.5em;
     }
+
 
     .main_content {
         float: left;
@@ -223,10 +303,7 @@ a{
     }
 }
 
-@media only screen and (min-width: 150px) and (max-width: 950px) {
-    .main_background_cover {
-        height:58em;
-    }
+@media only screen and (max-width:950px) {
 
     .header #logo{
         float:none;
@@ -272,7 +349,9 @@ a{
         font-weight: bolder;
     }
 
-    .header .nav .active a{
+    /* - */
+    /*sjekk dette*/
+    .header .nav .active > a{
         background-color: #444B5D;
         color: #FFF;
         font-weight: bolder;
@@ -286,43 +365,7 @@ a{
     }
 }
 
-@media only screen and (min-width: 150px) and (max-width: 660px) {
-    .main_background_cover {
-        height:53em;
-    }
-
-    .header #logo{
-        float:none;
-        display: block;
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-    .header {
-        background-color: #E5E5E5;
-        height: 290px;
-    }
-
-    .header .nav ul{
-        width:100%;
-        float:left;
-        list-style-type: none;
-        -webkit-padding-start: 0px;
-    }
-
-    .header .nav li {
-        width: 100%;
-        text-align: center;
-        margin: 0 0 0 0;
-        display: block;
-    }
-
-    .header .nav a:link, a:visited {
-        width: 95%;
-    }
-}
-
-    @media only screen and (min-width: 150px) and (max-width: 800px) {
+    @media only screen and (max-width: 800px){
     .more_content {
         background-color: #E5BF77;
         text-align: center;
@@ -359,6 +402,54 @@ a{
     .footer_wrapper #footer_text {
         text-align: center;
         color: #FFF;
+    }
+}
+
+
+@media only screen and (max-width: 660px){
+    #mobileBtn{
+        display:block !important;
+        cursor: pointer;
+    }
+
+    header nav{
+        display:none;
+    }
+
+    .main_background_cover {
+        height:51em;
+
+    }
+
+    .header #logo{
+        float:none;
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .header {
+        background-color: #E5E5E5;
+        height: auto;
+        overflow:hidden;
+    }
+
+    .header .nav ul{
+        width:100%;
+        float:left;
+        list-style-type: none;
+        -webkit-padding-start: 0px;
+    }
+
+    .header .nav li {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 0 0;
+        display: block;
+    }
+
+    .header .nav a:link, a:visited {
+        width: 95%;
     }
 }
 

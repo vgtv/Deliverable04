@@ -14,21 +14,31 @@ Førsteside, download links, kort info
         <meta name=”description” content="Able is an application made with love for people with reduced mobility. An easy way to
                 notify and tell your local authorities about obstacles, and instantly share your advice with others...">
         <meta name="keyword" content="able, robin, anton, steffen, random">
-
-        <!--The spider will now index your whole website.-->
-        <!--The spider will not only index the first webpage of your website but also all your other webpages.-->
         <meta name="robots" content="index, follow">
         <meta name="language" content="english">
 
 
     </head>
 <body>
+
+    <script>
+    function myFunction() {
+        if(document.querySelectorAll("header nav")[0].style.display == "block"){
+            document.querySelectorAll("header nav")[0].style.display = "none";
+        }else{
+            document.querySelectorAll("header nav")[0].style.display = "block" ;
+        }
+    }
+
+    </script>
+
     <header class="header">
-        <a href="index.html">
+        <a href="index.html" tabindex="-1">
             <img id="logo" src="images/logo.png" alt="A logo of the brand Able" width="180" height="50" title="Logo" tabindex="0">
         </a>
+            <img onclick="myFunction()" onkeypress="myFunction()" tabindex="0" id="mobileBtn"  style="height:50px; width:50px; display:none;" src="images/menu-512.png" />
 
-        <nav class="nav">
+        <nav id="thisnav" class="nav">
             <ul>
                 <li class="active"><a href="index.html" title="Home">Home</a></li>
                 <li><a href="about.html" title="About">About Able</a></li>
@@ -66,9 +76,6 @@ Førsteside, download links, kort info
                 <img id="apple_img" src="images/test.png" width="260px" height="75px" title="Download link 2"
                      alt="Download this product from googleplay"></a>
 
-            <a href="http://www.amazon.com" tabindex="0">
-                <img id="amazon_img" src="images/google.png" width="260px" height="75px" title="Download link 3"
-                     alt="Download this product from amazong store"></a>
         </section>
     </div>
 
